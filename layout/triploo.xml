@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@mipmap/login_background2"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/triplo"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:background="@mipmap/logo"
+        android:layout_centerHorizontal="true"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/triplo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:id="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="55dp">
+
+    <ImageView
+            android:id="@+id/usericon"
+            android:background="@mipmap/user"
+            android:layout_below="@+id/triplo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+           android:layout_alignBottom="@+id/editusericon"
+            android:layout_marginLeft=0dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editusername"
+            android:layout_toRightOf="@+id/usericon"
+           android:layout_alignTop="@+id/usericon"
+            android:hint="username"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#ffffff"
+           android:paddingLeft="20dp"
+            android:textSize="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/triplo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:id="@+id/abc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="110dp">
+
+
+
+        <ImageView
+        android:id="@+id/lockicon"
+        android:background="@mipmap/lock"
+        android:layout_below="@+id/editusername"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/lockicon"
+        android:layout_marginLeft="20dp" />
+
+
+    <EditText
+        android:id="@+id/editpassword"
+        android:layout_toRightOf="@+id/lockicon"
+        android:layout_alignTop="@+id/lockicon"
+       android:paddingLeft="50dp"
+        android:hint="password"
+        android:layout_marginRight="20dp"
+        android:textSize="30dp"
+        android:textColorHint="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:layout_marginTop="260dp"
+        android:textColor="#085829"
+        android:background="#ffffff"
+        android:textSize="30dp"
+        android:layout_below="@+id/editpassword"
+        android:padding="15dp"
+        android:layout_centerHorizontal="true"/>
+
+
+
+    <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:textColor="#ffffff"
+            android:textSize="25dp"
+            android:paddingRight="15dp"
+            android:layout_below="@+id/login"
+            android:paddingLeft="30dp" />
+
+    <TextView
+        android:id="@+id/slash"
+        android:text=" / "
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <TextView
+        android:id="@+id/forgotpassword"
+        android:text="forgot password"
+        android:textColor="#ffffff"
+        android:textSize="25dp"
+        android:layout_below="@+id/login"
+        android:layout_toRightOf="@+id/slash"
+        android:paddingLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/register"
+        android:gravity="bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageButton
+                android:id="@+id/imagebutton"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:paddingLeft="200dp"
+                android:layout_below="@+id/register"
+                android:background="@mipmap/facebook"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/centre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="or"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="30dp"
+                android:layout_below="@+id/imagebutton"
+                android:layout_centerHorizontal="true" />
+
+
+            <ImageButton
+                android:id="@+id/karan"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/centre"
+                android:background="@mipmap/google"
+                android:layout_centerHorizontal="true" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

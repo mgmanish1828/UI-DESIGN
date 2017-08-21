@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="4dp"
+    android:orientation="horizontal">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardELevation="10dp"
+        card_view:contentPadding="2dp"
+        card_view:cardCornerRadius="2dp"
+        android:id="@+id/cardPost">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:elevation="12dp"
+                    android:id="@+id/view2"
+                    app:cardCornerRadius="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:innerRadius="0dp"
+                    android:thicknessRatio="1.9">
+
+
+
+                    <ImageView
+                        android:layout_height="80dp"
+                        android:layout_width="match_parent"
+                        android:id="@+id/imageView1"
+                        android:background="@mipmap/circle"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true">
+                    </ImageView>
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp">
+
+
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="jenifer"
+                        android:textStyle="bold"
+                        android:textSize="30dp"
+                        android:paddingTop="8dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/dateTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12/12/2016 23:31"
+                        android:layout_below="@+id/user_name"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+
+
+            <RelativeLayout
+                android:id="@+id/texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    android:textStyle="bold"
+                    android:textSize="20dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardELevation="10dp"
+        card_view:contentPadding="2dp"
+        card_view:cardCornerRadius="2dp"
+        android:id="@+id/cardPost1"
+        android:layout_below="@+id/cardPost">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line"/>
+
+
+            <RelativeLayout
+                android:id="@+id/texts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp">
+
+
+                <TextView
+                    android:id="@+id/destination"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Destination\n"
+                    android:textSize="20dp"/>
+            </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <GridLayout
+        android:id="@+id/linearbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardPost1">
+
+        <Button
+            android:id="@+id/like"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="1234\nLike"
+            android:background="@color/textTitleSecondary"
+            android:textColor="#414141">
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/button1"
+            android:textSize="12dp"
+            android:background="@color/textTitleSecondary"
+            android:textColor="#414141"
+            android:text="1234\nShare"
+            android:layout_gravity="fill"/>
+        <Button
+            android:id="@+id/cooment"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="1234\nComment"
+            android:background="@color/textTitleSecondary"
+            android:textColor="#414141"
+            android:layout_toRightOf="@+id/share"/>
+
+    </GridLayout>
+</RelativeLayout>
